@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions</title>
+
+</head>
+<body>
+    <h2>All Submissions</h2>
+    <ul>
+        {% for submission in submissions %}
+            <li>{{ submission.name }} ({{ submission.email }}) - Submitted at {{ submission.submitted_at }}</li>
+        {% endfor %}
+    </ul>
+    
+    <button> 
+        <a href="/">Go back to Home</a> 
+    </button>
+</body>
+</html>
